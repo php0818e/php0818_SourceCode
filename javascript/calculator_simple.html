@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator simple</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		/* ----Cách 1 ---- */
+		function add(x,y){
+			alert("Kết quả phép cộng = " + (x+y));
+		}
+
+		function sub(x,y){
+			alert("Kết quả phép trừ = " + (x-y));
+		}
+		function multi(x,y){
+			alert("Kết quả phép nhân = " + (x*y));
+		}
+		function div(x,y){
+			if(y!=0){
+				alert("Kết quả phép chia = " + (x/y));
+			}else{
+				alert("Phép chia không có ý nghĩa");
+			}
+		}
+
+		//Thực hiện nhập giá trị và thực thi hàm
+		var x = parseInt(prompt("Mời bạn nhập x: "));
+		var y = parseInt(prompt("Mời bạn nhập y: "));
+		var o = prompt("Mời bạn nhập phép tính: ");
+
+		switch(o){
+			case '+':
+				add(x,y); break;
+			case '-':
+				sub(x,y); break;
+			case '*':
+				multi(x,y); break;
+			default:
+				div(x,y); break;
+		}
+
+		
+		/* ----Cách 2 ---- */
+		/*
+		function add(x, y){
+			return (x+y);
+		}
+		function sub(x, y){
+			return (x-y);
+		}
+		function multi(x, y){
+			return (x*y);
+		}
+		function div(x, y){
+			return (x/y);
+		}
+
+		//Thực hiện nhập giá trị và thực thi hàm
+		var x = parseInt(prompt("Mời bạn nhập x: "));
+		var y = parseInt(prompt("Mời bạn nhập y: "));
+		var o = prompt("Mời bạn nhập phép tính: ");
+
+		switch(o){
+			case '+':
+				add(x,y); break;
+			case '-':
+				sub(x,y); break;
+			case '*':
+				multi(x,y); break;
+			default:
+				div(x,y); break;
+		}
+		*/
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
