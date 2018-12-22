@@ -1,0 +1,1 @@
+alert("Message từ file Script.js");

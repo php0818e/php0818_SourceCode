@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function in JavaScript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num1; //Global
+		//Hàm người dùng từ định nghĩa - User defined
+
+		/* ----Hàm không có tham số và không giá trị trả về---- */
+		function add(){
+			var num1 = parseInt(prompt("Mời nhập num1:"));
+			var num2 = parseInt(prompt("Mời nhập num2:"));
+			alert("Kết quả của phép cộng = " + (num1+num2));
+		}
+
+		//Lời gọi hàm 'add()'
+		add();
+
+		/* ---- Hàm có tham số và có giá trị trả về ----*/
+		function additional(num1, num2){
+			var result = num1 + num2;
+			return result;
+		}
+
+		//Lời gọi hàm 'additional()'
+		alert(additional(10, 20));
+
+
+	</script>
+</body>
+</html>
+
+

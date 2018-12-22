@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container" id="header">
+        <div class="row">
+            <div class="col-xs-4" id="user">
+                <span class="glyphicon glyphicon-user"></span>
+                <a href="#">Đăng nhập</a> | <a href="#">Đăng ký</a>
+            </div>
+            <div class="col-xs-4" id="logo">
+                <div id="logo1">UINITY</div>
+                <div id="logo2">FASHION</div>
+            </div>
+            <div class="col-xs-4" id="cart">
+                <img src="images/heart.png" alt="" width="32px" height="32px">
+                <span id="alert-fav">13</span>
+                <img id="cart-img" src="images/cart.png" alt="" width="30px" height="30px">
+                <span id="alert-cart">13</span>
+                <span id="cart-total">$1200</span>
+            </div>
+        </div>
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <div class="container-fluid" id="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3" id="search">
+                    <a href="#" class="glyphicon glyphicon-search"></a>
+                </div>
+                <div class="col-xs-6" id="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Nam</a>
+                        </li>
+                        <li>
+                            <a href="#">Nữ</a>
+                        </li>
+                        <li>
+                            <a href="#">Trẻ em</a>
+                        </li>
+                        <li>
+                            <a href="#">Sơ sinh</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-3" id="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="clear: both"></div>
+
+    <div id="title">
+        <div class="container">
+            <div id="link">Trang chủ / Nữ</div>
+            <div id="name">Women</div>
+            <div id="desc">Lorem ipsum dolor sit amet, tellus enim.
+                    varius nec magna lobortis neque.
+            </div>
+            <img src="images/fashion-woman-model-portrait.png">
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div id="search-opt">
+                    <div style="padding: 10px 0">Tìm kiếm</div>
+                    <div class="s-group input-group">
+                        <input class="form-control" type="text" name="search" placeholder="Nhập sản phẩm cẩn tìm">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                    </div>
+                    <div class="f-label">
+                        <div class="f-label-2">Lọc theo:</div>
+                    </div>
+                    <div class="f-label">
+                        <div class="f-label-2" data-toggle="collapse" data-target="#cat-list">Danh mục</div>
+                    <ul class="collapse f-list" id="cat-list">
+                        <li><input type="checkbox" name="cat[0]" checked>Top</li>
+                        <li><input type="checkbox" name="cat[0]">Bottom</li>
+                        <li><input type="checkbox" name="cat[0]">Dress</li>
+                        <li><input type="checkbox" name="cat[0]">Accessories</li>
+                        <li><input type="checkbox" name="cat[0]">Footwear</li>
+                        <li><input type="checkbox" name="cat[0]">Other</li>
+                    </ul>
+                    </div>
+                    
+                    <div class="f-label"><div class="f-label-2">Giá</div></div>
+                    <div class="f-label"><div class="f-label-2">Kích thước</div></div>
+                    <div class="f-label"><div class="f-label-2">Thương hiệu</div></div>
+                    <div class="f-label"><div class="f-label-2">Màu sắc</div></div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="row f-label" id="top-nav" style="padding:5px 0">
+                    <div class="col-sm-4">
+                        <div id="item-count">102 sản phẩm tìm được</div>
+                    </div>
+                    <div class="col-sm-8">
+                        <span style="float:left;line-height: 35px;padding-right: 30px">Sắp xếp theo giá:</span>
+                        <div style="display: inline-block;width:35%">
+                            <select class="form-control">
+                                <option>Tăng dần</option>
+                                <option>Giảm dần</option>
+                            </select>
+                        </div>
+                        
+                        <ul class="pagination pagination-sm custom-page">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li class="active"><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="prod-list" class="f-label">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="product">
+                                <div class="thumb">
+                                    <img src="images/product1.png">
+                                    <span class="fa fa-heart-o"></span>
+                                    <div class="price">$100</div>
+                                    <div class="sale no"></div>
+                                    <button class="btn btn-warning btn-sm">Chi tiết</button>
+                                </div>
+                                <div class="text">
+                                    <div class="name">Tên sản phẩm</div>
+                                    <span class="type">Top</span>
+                                    <span class="rate unchecked">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="product">
+                                <div class="thumb">
+                                    <img src="images/product1.png">
+                                    <span class="fa fa-heart-o"></span>
+                                    <div class="price">$100</div>
+                                    <div class="sale no"></div>
+                                    <button class="btn btn-warning btn-sm">Chi tiết</button>
+                                </div>
+                                <div class="text">
+                                    <div class="name">Tên sản phẩm</div>
+                                    <span class="type">Top</span>
+                                    <span class="rate unchecked">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="product">
+                                <div class="thumb">
+                                    <img src="images/product1.png">
+                                    <span class="fa fa-heart-o"></span>
+                                    <div class="price">$100</div>
+                                    <div class="sale no"></div>
+                                    <button class="btn btn-warning btn-sm">Chi tiết</button>
+                                </div>
+                                <div class="text">
+                                    <div class="name">Tên sản phẩm</div>
+                                    <span class="type">Top</span>
+                                    <span class="rate unchecked">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="product">
+                                <div class="thumb">
+                                    <img src="images/product1.png">
+                                    <span class="fa fa-heart-o"></span>
+                                    <div class="price">$100</div>
+                                    <div class="sale no"></div>
+                                    <button class="btn btn-warning btn-sm">Chi tiết</button>
+                                </div>
+                                <div class="text">
+                                    <div class="name">Tên sản phẩm</div>
+                                    <span class="type">Top</span>
+                                    <span class="rate unchecked">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="product">
+                                <div class="thumb">
+                                    <img src="images/product1.png">
+                                    <span class="fa fa-heart-o"></span>
+                                    <div class="price">$100</div>
+                                    <div class="sale no"></div>
+                                    <button class="btn btn-warning btn-sm">Chi tiết</button>
+                                </div>
+                                <div class="text">
+                                    <div class="name">Tên sản phẩm</div>
+                                    <span class="type">Top</span>
+                                    <span class="rate unchecked">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="product">
+                                <div class="thumb">
+                                    <img src="images/product1.png">
+                                    <span class="fa fa-heart-o"></span>
+                                    <div class="price">$100</div>
+                                    <div class="sale no"></div>
+                                    <button class="btn btn-warning btn-sm">Chi tiết</button>
+                                </div>
+                                <div class="text">
+                                    <div class="name">Tên sản phẩm</div>
+                                    <span class="type">Top</span>
+                                    <span class="rate unchecked">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="product">
+                                <div class="thumb">
+                                    <img src="images/product1.png">
+                                    <span class="fa fa-heart-o"></span>
+                                    <div class="price">$100</div>
+                                    <div class="sale no"></div>
+                                    <button class="btn btn-warning btn-sm">Chi tiết</button>
+                                </div>
+                                <div class="text">
+                                    <div class="name">Tên sản phẩm</div>
+                                    <span class="type">Top</span>
+                                    <span class="rate unchecked">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="product">
+                                <div class="thumb">
+                                    <img src="images/product1.png">
+                                    <span class="fa fa-heart-o"></span>
+                                    <div class="price">$100</div>
+                                    <div class="sale no"></div>
+                                    <button class="btn btn-warning btn-sm">Chi tiết</button>
+                                </div>
+                                <div class="text">
+                                    <div class="name">Tên sản phẩm</div>
+                                    <span class="type">Top</span>
+                                    <span class="rate unchecked">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="product">
+                                <div class="thumb">
+                                    <img src="images/product1.png">
+                                    <span class="fa fa-heart-o"></span>
+                                    <div class="price">$100</div>
+                                    <div class="sale no"></div>
+                                    <button class="btn btn-warning btn-sm">Chi tiết</button>
+                                </div>
+                                <div class="text">
+                                    <div class="name">Tên sản phẩm</div>
+                                    <span class="type">Top</span>
+                                    <span class="rate unchecked">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="product">
+                                <div class="thumb">
+                                    <img src="images/product1.png">
+                                    <span class="fa fa-heart-o"></span>
+                                    <div class="price">$100</div>
+                                    <div class="sale no"></div>
+                                    <button class="btn btn-warning btn-sm">Chi tiết</button>
+                                </div>
+                                <div class="text">
+                                    <div class="name">Tên sản phẩm</div>
+                                    <span class="type">Top</span>
+                                    <span class="rate unchecked">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="product">
+                                <div class="thumb">
+                                    <img src="images/product1.png">
+                                    <span class="fa fa-heart-o"></span>
+                                    <div class="price">$100</div>
+                                    <div class="sale no"></div>
+                                    <button class="btn btn-warning btn-sm">Chi tiết</button>
+                                </div>
+                                <div class="text">
+                                    <div class="name">Tên sản phẩm</div>
+                                    <span class="type">Top</span>
+                                    <span class="rate unchecked">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="product">
+                                <div class="thumb">
+                                    <img src="images/product1.png">
+                                    <span class="fa fa-heart-o"></span>
+                                    <div class="price">$100</div>
+                                    <div class="sale no"></div>
+                                    <button class="btn btn-warning btn-sm">Chi tiết</button>
+                                </div>
+                                <div class="text">
+                                    <div class="name">Tên sản phẩm</div>
+                                    <span class="type">Top</span>
+                                    <span class="rate unchecked">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bot-nav" class="f-label-2">
+                    <div class="row">
+                        <div class="col-sm-4" id="previous">
+                            <a href="#">
+                                <i class="fa fa-angle-left"></i>
+                                <span>Trang trước</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-4" id="bot-page">
+                            <ul class="pagination pagination-sm custom-bot-page">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="active"><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4" id="next">
+                            <a style="float: right" href="#">
+                                <span>Trang sau</span>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1"><a href="">Giới thiệu</a></div>
+                <div class="col-xs-1"><a href="">Liên hệ</a></div>
+                <div class="col-xs-10" style="text-align: right;color: #b4b4b4">© 2016 Graphicstall.</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

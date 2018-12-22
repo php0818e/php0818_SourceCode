@@ -1,0 +1,75 @@
+/* Header */
+#title{
+    background-color: #1b1b1b;
+    color: white;
+    padding: 20px 0 40px 0px;
+    position: relative;
+}
+#title img{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 120px;
+}
+#title #link{
+    padding-bottom: 20px
+}
+#title #name{
+    color: #ffab00;
+    font-size: 60pt;
+    line-height: 80px
+}
+#title #desc{
+
+}
+
+/* Search option */
+#search-opt{
+
+}
+.f-label{
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(219, 219, 219)
+}
+.f-label-2{
+    padding: 10px 0 5px 0
+}
+.f-list{
+    list-style-type: none;
+    margin-left: 20px
+}
+
+/* Top nav */
+#top-nav{
+
+}
+#item-count{
+    color: #333333;
+    font-size: 14pt
+}
+
+.custom-page{
+    width: 35%;
+    margin: 0;
+    float: right
+}
+
+/* Product list */
+#prod-list{
+}
+
+/* Bottom nav */
+#bot-nav{
+    text-align: center
+}
+#previous a, #next a{
+    color: #333333;
+    font-size: 12pt
+}
+#previous{
+    text-align: left;
+}
+
+.custom-bot-page{
+    margin: 0;
+}
