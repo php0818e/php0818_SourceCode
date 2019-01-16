@@ -6,4 +6,5 @@ $controller = new Controller();
 
 //Truy cập tới phương thức invoke()
 $controller->invoke();
+
 ?>
