@@ -1,4 +1,6 @@
 <?php
+	//Định nghĩa ra một hằng số có giá trị là domain trỏ tới project
+	define("PATH", "http://localhost/itplus/php0818_SourceCode/mvc_advance");
 	//Gọi kết nối CSDL
 	require_once "connection.php";
 

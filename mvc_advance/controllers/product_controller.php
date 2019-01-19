@@ -14,6 +14,15 @@ class ProductController extends BaseController{
 		$this->render("index",$data);
 	}
 
+	public function detail(){
+		$id = $_GET['id'];
+		$products = new Products();
+		$data = $products->getProductById($id);
+		$this->render("detail",$data);
+	}
+
 
 }
 ?>
+
+
