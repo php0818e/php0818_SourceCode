@@ -13,8 +13,8 @@
 		}
 	}else{
 		//Gán controller và action mặc định
-		$controller = "pages";
-		$action		= "home";
+		$controller = "product";
+		$action		= "index";
 	}
 
 	require_once "routes.php";

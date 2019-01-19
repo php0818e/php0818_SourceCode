@@ -2,7 +2,8 @@
 //Khai báo controller và action sẽ được tạo ra
 $controllers = array(
   //'pages' => ['home', 'error']
-  'user'	=> ['add','login','error']
+  'user'	=> ['add','login','error','index'],
+  'product'	=> ['index']
 );
 
 //Kiểm tra controller và action xem đã tồn tại trong project chưa

@@ -6,6 +6,10 @@ class UserController extends BaseController{
 		$this->folder = "user";
 	}
 
+	public function index(){
+		$this->render("index");
+	}
+
 	public function add(){
 		$data = array('name'=>'Admin','age'=>30);
 		$this->render('register',$data);
