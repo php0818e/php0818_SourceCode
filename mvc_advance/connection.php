@@ -11,7 +11,7 @@ class DB
 		//Kiểm tra giá trị của đối tượng CSDL 'instance'
 		if(!isset(self::$instance)){
 			try{
-				self::$instance = new PDO("mysql:host=localhost;dbname=mvc_demo;charset=utf8","root","");
+				self::$instance = new PDO("mysql:host=localhost;dbname=EcomDB;charset=utf8","root","");
 			}catch(PDOException $e){
 				die("Lỗi: ". $e->getMessage());
 			}

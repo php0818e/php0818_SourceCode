@@ -1,5 +1,6 @@
 <?php
 require_once "controllers/base_controller.php";
+require_once "models/products.php";
 
 class ProductController extends BaseController{
 	public function __construct(){
@@ -7,8 +8,10 @@ class ProductController extends BaseController{
 	}
 
 	public function index(){
-
-		$this->render("index");
+		//Xuống Model lấy tất cả dữ liệu từ bảng 'products'
+		$products = new Products();
+		$data = $products->getAllProduct();
+		$this->render("index",$data);
 	}
 
 
