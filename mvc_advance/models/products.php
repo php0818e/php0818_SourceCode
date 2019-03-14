@@ -2,7 +2,7 @@
 require_once "connection.php";
 
 class Products{
-	private $productId;
+	private $productid;
 	private $name;
 	private $price;
 	private $description;

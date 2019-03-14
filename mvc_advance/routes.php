@@ -3,7 +3,7 @@
 $controllers = array(
   //'pages' => ['home', 'error']
   'user'	=> ['add','login','error','index'],
-  'product'	=> ['index','detail']
+  'product'	=> ['index', 'detail']
 );
 
 //Kiểm tra controller và action xem đã tồn tại trong project chưa

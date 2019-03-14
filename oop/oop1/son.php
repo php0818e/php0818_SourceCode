@@ -22,7 +22,7 @@ class son extends human{
 $con = new son(16);
 $con->display();
 
-$cha = new human(180,"ABC", 10000000);
+$cha = new human(180,"ABC",10000000);
 $cha->displayInfor();
 $cha->displayAcc();
 ?>

@@ -11,11 +11,11 @@ class human{
 	}
 
 	public function displayInfor(){
-		echo "Tên: ".$this->name. "; Chiều cao: ".$this->height;
+		echo "Tên: ".$this->name. "; Chiều cao: ".$this->height."<br>";
 	}
 
 	protected function displayAcc(){
-		echo "Tiền trong TK:". $this->account;
+		echo "Tiền trong TK:". $this->account."<br>";
 	}
 }
 ?>
